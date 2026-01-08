@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Claudia V Dominguez — AI Automation, Data Analytics, and Software Engineering Portfolio" />
+  <title>Claudia Dominguez | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- STARFIELD BACKGROUND -->
+  <canvas id="starfield" aria-hidden="true"></canvas>
+
+  <!-- OPENING CRAWL OVERLAY -->
+  <section class="crawl" id="crawlOverlay" aria-label="Opening crawl" role="dialog" aria-modal="true">
+    <div class="crawl__top">
+      <span class="crawl__badge">EPISODE I</span>
+      <h1 class="crawl__title">THE PORTFOLIO AWAKENS</h1>
+      <p class="crawl__subtitle">Claudia Dominguez • AI Automation • Data • Full-Stack</p>
+    </div>
+
+    <div class="crawl__stage" aria-hidden="true">
+      <div class="crawl__fadeTop"></div>
+      <div class="crawl__fadeBottom"></div>
+
+      <div class="crawl__text">
+        <p>
+          In a galaxy not so far away…
+          Claudia builds AI-powered automations, data intelligence dashboards,
+          and practical software systems that reduce manual effort and improve decision-making.
+        </p>
+        <p>
+          Recent missions include AI workflow automation with Microsoft Copilot & Azure,
+          intelligent agents for coding assistance, and analytics solutions using SQL and BI tools.
+        </p>
+        <p>
+          Your objective: explore projects, inspect impact, and make contact.
+        </p>
+      </div>
+    </div>
+
+    <div class="crawl__actions">
+      <button class="btn" id="enterSiteBtn" type="button">Enter Site</button>
+      <button class="btn btn--ghost" id="skipCrawlBtn" type="button">Skip</button>
+    </div>
+  </section>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#">
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span class="brand__text">Claudia Dominguez</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          Menu
+        </button>
+
+        <div class="nav__menu" id="navMenu">
+          <a class="saber" href="#projects">Projects</a>
+          <a class="saber" href="#experience">Experience</a>
+          <a class="saber" href="#skills">Skills</a>
+          <a class="saber" href="#education">Education</a>
+          <a class="saber" href="#contact">Contact</a>
+
+          <button class="btn btn--ghost" id="hyperToggle" type="button">Hyperspace</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div>
+          <p class="eyebrow">Houston, TX • Open to Remote / Hybrid</p>
+
+          <h1>
+            Building <span class="accent">AI automation</span>,
+            <span class="accent">data intelligence</span>,
+            and <span class="accent">software systems</span> for real-world impact.
+          </h1>
+
+          <p class="lead">
+            Computer Science graduate delivering AI-powered process automation, intelligent agents, and data-driven applications
+            that improve efficiency and decision-making.
+          </p>
+
+          <div class="cta">
+            <a class="btn saberBtn" href="#projects">View Projects</a>
+            <a class="btn btn--ghost saberBtn" href="https://github.com/CV17-09" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn btn--ghost saberBtn" href="https://www.linkedin.com/in/claudia-v-dominguez" target="_blank" rel="noreferrer">LinkedIn</a>
+            <!-- Optional: put resume.pdf in /assets and uncomment -->
+            <!-- <a class="btn btn--ghost saberBtn" href="assets/resume.pdf" target="_blank" rel="noreferrer">Resume</a> -->
+          </div>
+
+          <div class="meta">
+            <div class="meta__item">
+              <span class="meta__label">Email</span>
+              <button class="meta__value linklike" id="copyEmail" data-copy="claudiamora0917@gmail.com" type="button">
+                claudiamora0917@gmail.com
+              </button>
+            </div>
+
+            <div class="meta__item">
+              <span class="meta__label">Phone</span>
+              <a class="meta__value" href="tel:+13469781609">(346) 978-1609</a>
+            </div>
+          </div>
+        </div>
+
+        <aside class="card holo">
+          <div class="card__body">
+            <h2 class="card__title">Mission Log</h2>
+            <ul class="list">
+              <li>AI automation with Microsoft Copilot & Azure</li>
+              <li>AI agents for code completion & refactoring</li>
+              <li>SQL analytics, dashboards, and workflow automation</li>
+              <li>Fluent: English & Spanish • Proficient: Italian</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head">
+          <h2>Projects</h2>
+          <p class="muted">Click a project to view a full case-style summary.</p>
+        </div>
+
+        <div class="grid grid--3">
+
+          <article class="card holo projectCard">
+            <div class="card__body">
+              <h3 class="card__title">Oil Field Equipment Monitoring</h3>
+              <p class="card__subtitle">Data Analytics & Automation</p>
+              <p>Monitoring system using Python, SQL, and Power BI to detect anomalies and predict failures.</p>
+              <div class="tags">
+                <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Power BI</span>
+              </div>
+            </div>
+            <div class="card__footer">
+              <a class="link" href="https://github.com/CV17-09/Oil-Field-Euipment-Monitoring.git" target="_blank" rel="noreferrer">Repository →</a>
+              <button class="btn btn--ghost saberBtn" type="button" data-project="oil">View Details</button>
+            </div>
+          </article>
+
+          <article class="card holo projectCard">
+            <div class="card__body">
+              <h3 class="card__title">Car Dealership Management System</h3>
+              <p class="card__subtitle">Database System (SQL Focus)</p>
+              <p>Relational database solution to streamline sales and service tracking using advanced SQL.</p>
+              <div class="tags">
+                <span class="tag">SQL</span><span class="tag">Databases</span>
+              </div>
+            </div>
+            <div class="card__footer">
+              <a class="link" href="https://github.com/CV17-09/Car-Dealership-Management-System.git" target="_blank" rel="noreferrer">Repository →</a>
+              <button class="btn btn--ghost saberBtn" type="button" data-project="dealership">View Details</button>
+            </div>
+          </article>
+
+          <article class="card holo projectCard">
+            <div class="card__body">
+              <h3 class="card__title">Budget Tracker Web App</h3>
+              <p class="card__subtitle">Web App & Visualization</p>
+              <p>JavaScript-based budget tracker with dashboards and interactive visuals.</p>
+              <div class="tags">
+                <span class="tag">JavaScript</span><span class="tag">HTML/CSS</span>
+              </div>
+            </div>
+            <div class="card__footer">
+              <a class="link" href="https://github.com/CV17-09/Budget-Tracker-Web-App.git" target="_blank" rel="noreferrer">Repository →</a>
+              <button class="btn btn--ghost saberBtn" type="button" data-project="budget">View Details</button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section__head">
+          <h2>Experience</h2>
+        </div>
+
+        <div class="stack">
+          <article class="card holo">
+            <div class="card__body">
+              <h3 class="card__title">AI Solutions Specialist Intern — Harris County Universal Services</h3>
+              <p class="card__subtitle">Jun 2025 – Aug 2025</p>
+              <ul class="bullets">
+                <li>Reduced manual processing time by deploying AI-powered automation across Microsoft 365 (Word, Outlook, Teams, SharePoint).</li>
+                <li>Delivered proof-of-concept intelligent agents so leadership could evaluate adoption with lower risk.</li>
+                <li>Translated operational bottlenecks into practical automation use cases and presented findings to leadership.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card holo">
+            <div class="card__body">
+              <h3 class="card__title">AI Engineer (Freelance) — Outlier</h3>
+              <p class="card__subtitle">May 2025 – Present</p>
+              <ul class="bullets">
+                <li>Improved developer productivity through AI-assisted code completion and refactoring.</li>
+                <li>Implemented multi-language support (Python, Java) for IDE workflows.</li>
+                <li>Improved reliability via iterative evaluation and optimization of agent outputs.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card holo">
+            <div class="card__body">
+              <h3 class="card__title">Data Analyst & AI Automation Developer (Freelance) — Upwork</h3>
+              <p class="card__subtitle">Jan 2024 – Present • Remote</p>
+              <ul class="bullets">
+                <li>Built dashboards and analytics reports that improved visibility into business KPIs.</li>
+                <li>Optimized SQL queries to improve reporting performance and accuracy.</li>
+                <li>Automated repetitive workflows using AI-based solutions to reduce manual effort.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head">
+          <h2>Skills</h2>
+        </div>
+
+        <article class="card holo">
+          <div class="card__body">
+            <p class="muted">
+              Python • SQL • Java • C++ • JavaScript • TypeScript • C# • Azure • Microsoft Copilot • Power BI • Tableau •
+              React • Node.js • PostgreSQL • MySQL • Machine Learning • NLP • Git
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section__head">
+          <h2>Education</h2>
+        </div>
+
+        <article class="card holo">
+          <div class="card__body">
+            <h3 class="card__title">University of Houston–Downtown</h3>
+            <p class="card__subtitle">B.S. Computer Science • Magna Cum Laude</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <h2>Contact</h2>
+        </div>
+
+        <article class="card holo">
+          <div class="card__body">
+            <p>Email: <a class="link" href="mailto:claudiamora0917@gmail.com">claudiamora0917@gmail.com</a></p>
+            <p>GitHub: <a class="link" href="https://github.com/CV17-09" target="_blank" rel="noreferrer">github.com/CV17-09</a></p>
+            <p>LinkedIn: <a class="link" href="https://www.linkedin.com/in/claudia-v-dominguez" target="_blank" rel="noreferrer">linkedin.com/in/claudia-v-dominguez</a></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="muted">© <span id="year"></span> Claudia Dominguez • Built with GitHub Pages</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- PROJECT MODAL -->
+  <dialog class="modal" id="projectModal" aria-label="Project details">
+    <div class="modal__inner holo">
+      <button class="modal__close saberBtn" id="closeModalBtn" type="button" aria-label="Close">✕</button>
+
+      <h3 class="modal__title" id="modalTitle">Project Title</h3>
+      <p class="modal__subtitle" id="modalSubtitle">Subtitle</p>
+
+      <div class="modal__grid">
+        <div class="modal__left">
+          <img class="modal__img" id="modalImg" src="assets/project-placeholder.png" alt="Project screenshot" />
+          <p class="modal__hint muted">
+            Tip: Put your screenshots in <code>/assets</code> and update the filenames in <code>script.js</code>.
+          </p>
+        </div>
+
+        <div class="modal__right">
+          <div class="modal__section">
+            <h4>What it does</h4>
+            <p id="modalDesc"></p>
+          </div>
+
+          <div class="modal__section">
+            <h4>Impact</h4>
+            <ul class="bullets" id="modalImpact"></ul>
+          </div>
+
+          <div class="modal__section">
+            <h4>Tech stack</h4>
+            <div class="tags" id="modalTags"></div>
+          </div>
+
+          <div class="modal__actions">
+            <a class="btn saberBtn" id="modalRepo" href="#" target="_blank" rel="noreferrer">Open Repo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
